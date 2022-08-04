@@ -7,9 +7,9 @@
   "scripts": {
     "test": "npm run build && jest tests/",
     "build": "tsc",
-    "lint": "eslint src/**/*.{ts,js}",
-    "format": "prettier --write src/**/*.{ts,js}",
-    "format:check": "prettier --check src/**/*.{ts,js}",
+    "lint": "eslint 'src/**/*.{ts,js}'",
+    "format": "prettier --write 'src/**/*.{ts,js}'",
+    "format:check": "prettier --check 'src/**/*.{ts,js}'",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "version": "npm run format && git add -A src",
