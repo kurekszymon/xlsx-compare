@@ -1,6 +1,6 @@
 {
   "name": "xlsx-compare",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Efficient way to compare excel files in the scope of content. Spot where the excel file differs to the cell.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
