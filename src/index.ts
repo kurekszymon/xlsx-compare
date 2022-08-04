@@ -1,7 +1,7 @@
+import { Cell, Diff, Output } from './types';
+
 import { differenceWith, isEqual } from 'lodash';
 import { readFile } from 'xlsx';
-
-import { Cell, Diff, Output } from './types';
 
 /**
  * Compares two given xlsx files

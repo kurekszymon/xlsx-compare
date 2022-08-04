@@ -1,7 +1,16 @@
 {
-    "rules": {
-        "semi": "error",
-        "prefer-const": "error",
-    },
-    "parserOptions": {"ecmaVersion": 2015}
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "semi": "error",
+    "prefer-const": "error",
+    "sort-imports": "error"
+  },
+  "parserOptions": { "ecmaVersion": 2015, "sourceType": "module" }
 }

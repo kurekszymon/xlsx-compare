@@ -12,8 +12,8 @@ export type Cell = {
 export type Diff = {
   cells: {
     [key: string]: {
-      expected: any;
-      received: any;
+      expected: unknown;
+      received: unknown;
     };
   };
   additionalCells?: string[];
