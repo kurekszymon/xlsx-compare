@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-undef
-const { xlsxCompare } = require('../../lib/index');
+import { xlsxCompare } from '../index';
 
 describe('Tests xlsx compare', () => {
   it('should succeed', () => {
@@ -25,7 +25,7 @@ describe('Tests xlsx compare', () => {
   });
 
   it('should fail with error message', () => {
-    expect(xlsxCompare()).toEqual({
+    expect(xlsxCompare('', '')).toEqual({
       error: 'Both file and fixture have to be defined.',
       success: false,
     });
