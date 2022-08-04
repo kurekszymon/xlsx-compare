@@ -2,13 +2,18 @@
   "name": "xlsx-compare",
   "version": "0.1.0",
   "description": "Efficient way to compare excel files in the scope of content. Spot where the excel file differs to the cell.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "npm run build && jest tests/",
     "build": "tsc",
     "lint": "eslint src/**/*.{ts,js}",
     "format": "prettier --write src/**/*.{ts,js}",
-    "format:check": "prettier --check src/**/*.{ts,js}"
+    "format:check": "prettier --check src/**/*.{ts,js}",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -21,6 +26,13 @@
   ],
   "author": "Szymon Kurek",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurekszymon/xlsx-compare/issues"
+  },
+  "homepage": "https://github.com/kurekszymon/xlsx-compare#readme",
+  "files": [
+    "lib/**/*"
+  ],
   "dependencies": {
     "lodash": "^4.17.21",
     "xlsx": "^0.18.5"
