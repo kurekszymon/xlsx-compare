@@ -10,7 +10,9 @@
   "rules": {
     "semi": "error",
     "prefer-const": "error",
-    "sort-imports": "error"
+    "sort-imports": "error",
+    "@typescript-eslint/no-var-requires": 0
   },
+  "env": { "jest/globals": true },
   "parserOptions": { "ecmaVersion": 2015, "sourceType": "module" }
 }

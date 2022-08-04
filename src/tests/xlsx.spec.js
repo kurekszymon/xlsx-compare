@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const { xlsxCompare } = require('../../lib/index');
 
 describe('Tests xlsx compare', () => {

@@ -6,9 +6,9 @@
   "scripts": {
     "test": "npm run build && jest tests/",
     "build": "tsc",
-    "lint": "eslint src/**/*.ts",
-    "format": "prettier --write src/**/*.ts",
-    "format:check": "prettier --check src/**/*.ts"
+    "lint": "eslint src/**/*.{ts,js}",
+    "format": "prettier --write src/**/*.{ts,js}",
+    "format:check": "prettier --check src/**/*.{ts,js}"
   },
   "repository": {
     "type": "git",
