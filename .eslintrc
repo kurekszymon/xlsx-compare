@@ -1,0 +1,7 @@
+{
+    "rules": {
+        "semi": "error",
+        "prefer-const": "error",
+    },
+    "parserOptions": {"ecmaVersion": 2015}
+}
