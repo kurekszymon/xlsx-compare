@@ -62,7 +62,7 @@ const { xlsxCompare } = require("../index");
 on("task", {
     ...
     "xlsx:compare"({fixture, file}) {
-        return compareXLSX(fixture, file)
+        return xlsxCompare(fixture, file)
     }
 })
 ...
